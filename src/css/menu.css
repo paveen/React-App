@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    padding: 0 5%;
+}
+
+.logo {
+    display: flex;
+}
+
+.home .sidebar ul {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+}
