@@ -24,7 +24,6 @@ const Routes = () => (
 			<Route exact path="/reports" render={()=><App><Home><Reports /></Home></App>}/>
 			<Route exact path="/ecommerce" render={()=><App><Home><Ecommerce /></Home></App>}/>
 			<Route exact path="/settings" render={()=><App><Home><Settings /></Home></App>}/>
-
 		</Switch>
 	</Router>
   );

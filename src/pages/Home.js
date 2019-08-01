@@ -1,21 +1,16 @@
 import React from 'react';
 import Sidemenu from '../components/Sidemenu';
-
-
 function Home(props){
 	console.log(props);
 	return (
-		
-		<div className="home">
-		    
-			<div className="col-md-4 sidebar">
+		<div className="row">
+			<div className="col-md-3 sidebar">
 				<Sidemenu/>
 			</div>
-			<div className="col-md-8 content">
+			<div className="col-md-9 content">
 				{props.children}
 			</div>
 		</div>
 	)
 }
-
 export default Home;

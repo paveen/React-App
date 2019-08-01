@@ -1,0 +1,30 @@
+{
+    "sidenav":
+
+        [{
+            "pageUrl": "/",
+            "icon": "../images/icon-grid.png",
+            "text": "Dashboard"
+        },
+        {
+            "pageUrl": "/manage",
+            "icon": "../images/icon-manage.png",
+            "text": "Manage Accounts"
+        },
+        {
+            "pageUrl": "/reports",
+            "icon": "../images/icon-manage.png",
+            "text": "Reports"
+        },
+        {
+            "pageUrl": "/ecommerce",
+            "icon": "../images/icon-manage.png",
+            "text": "E-Commerce"
+        },
+        {
+            "pageUrl": "/settings",
+            "icon": "../images/icon-manage.png",
+            "text": "Settings"
+        }
+    ]
+}

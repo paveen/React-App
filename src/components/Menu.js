@@ -5,7 +5,7 @@ import logo from '../images/logo.png';
 function Menu() {
   return (
     <div className="header bg-light">
-      <div className="container">
+      <div className="container-fluid">
       <nav className="navbar navbar-expand-lg navbar-light">
         <Link className="navbar-brand logo" to="#">
         <img src={logo} alt="Logo" className="App-logo" /></Link>

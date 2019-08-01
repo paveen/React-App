@@ -30,11 +30,100 @@
     justify-content: space-around;
 }
 
-@keyframes App-logo-spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+.btn-outline {
+    min-width: 160px;
+    height: 40px;
+    border-radius: 5px;
+    border: solid 1px #ea7600;
+    font-size: 12px;
+    color: #ea7600;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.5s ease;
+}
+
+.btn-outline:hover {
+    background: #ea7600;
+    color: #fff;
+}
+
+.btn-blue-text {
+    background: none;
+    color: #007fa3;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 5px 0 28px;
+}
+
+.form-row>.col,
+.form-row>[class*=col-] {
+    padding-right: 20px;
+    padding-left: 10px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.ml7 {
+    margin-left: 7px;
+}
+
+.flex-dir {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.form-row.flex-dir .form-group {
+    padding-left: 4px;
+    padding-top: 10px;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url(../images/down-arrow.png) no-repeat right 10px;
+    background-size: 30px;
+}
+
+.btn-gray {
+    border-radius: 5px;
+    border: solid 1px #c7c7c7;
+    background-color: #e9e9e9;
+    min-width: 100px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.btn-gray:hover {
+    background-color: #ddd;
+}
+
+.btn-orange {
+    border-radius: 5px;
+    background-color: #ea7600;
+    min-width: 100px;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.btn-orange:hover {
+    color: #fff;
+    background: #c76400;
+}
+
+.btn-bottom {
+    margin: 0 120px;
+    float: right;
+}
+
+.btn-bottom .btn {
+    margin: 0 10px !important;
+    min-height: 40px;
 }

@@ -3,19 +3,34 @@
     padding: 0;
 }
 
-header {
+.header {
     display: flex;
-    padding: 0 5%;
+    padding: 2px 2%;
+    box-shadow: 0 1px 4px 0 #e5e7ee;
+    z-index: 1;
+    position: relative;
 }
 
 .logo {
     display: flex;
 }
 
-.home .sidebar ul {
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
+.navbar {
+    padding: 0;
+}
+
+ul.navbar-nav li,
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 8px 12px;
+    transition: 0.4s ease-in-out;
+}
+
+ul.navbar-nav li:hover {
+    background: #e5e7ee;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #4e4e4e;
 }
 
 @media (min-width: 992px) {
