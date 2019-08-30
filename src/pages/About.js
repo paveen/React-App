@@ -5,7 +5,7 @@ import Navigation from '../json/navigation.json';
 export const CardItems = ({item}) => {
 		return (
 			<div className="card col-md-6 col-lg-3 tc">
-				<div className="card-img pb-3">
+				<div className="card-img pb-3 pt-3">
 					<img src={require(`../images/${item.icon}`)} alt={item.alt}/>
 				</div>
 				<div className="card-box">
@@ -25,7 +25,7 @@ const About = () => (
 			<div className="banner-about">
 				<img src={imgbanner} alt="{key.alt}"/>
 			</div>
-			<div className="container">
+			<div className="mt-4 container">
 				<div className="row">
 					{ Navigation.sidenav.map((item, index) => (<CardItems key={ index } item={item} />)) }
 				</div>

@@ -1,0 +1,14 @@
+{
+    "service_page": [{
+        "banner_title": "Services",
+        "banner_text": "Lorem ipsum dolor sit amet, consecte adipiscing elit. Suspendisse condimentum porttitor cursumus.",
+        "heading": "Duis leo. Sed fringilla mauris sit amet nibh.",
+        "text": " Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc",
+        "para": "Donec id elit eget metus.",
+        "ptext": "Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.",
+        "whatwedo": "What we do",
+        "whatwedo_text": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea, exercitationem velit at unde cupiditate.",
+        "bottom_heading": "simple call-to-action-style component for calling extra attention",
+        "bottom_text": "This is a simple hero unit, a simple call-to-action-style component for calling extra attention to featured content."
+    }]
+}

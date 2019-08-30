@@ -6,6 +6,11 @@ body {
     background: #f5f5f5;
 }
 
+::selection {
+    background: #000;
+    color: #fff;
+}
+
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
@@ -104,35 +109,184 @@ code {
 
 .about {
     height: calc(93vh - 76px);
+    width: 100%;
 }
 
-.about .banner-about {
-    height: 280px;
+.banner-about {
+    position: relative;
+    height: 360px;
+    overflow: hidden;
+}
+
+.banner-about:before {
+    background: url(../images/overlay-pattern-1.png);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: " ";
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    opacity: .8;
+    min-height: 2000px;
 }
 
 .about .banner-about img {
     width: 100%;
-    height: 330px;
+    height: 360px;
     object-fit: cover;
+}
+
+.banner-about h2 {
+    position: absolute;
+    color: #fff;
+    width: 70%;
+    text-align: center;
+    top: 40%;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 28px;
+    letter-spacing: 3px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+
+.banner-about p {
+    position: absolute;
+    color: #fff;
+    width: 80%;
+    text-align: center;
+    top: 60%;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 100;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
 }
 
 .about .card {
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin: 5px;
-    padding: 15px 10px;
+    margin: 10px 10px;
+    padding: 15px;
     font-size: 14px;
-    max-width: 24% !important;
+    max-width: 23% !important;
+    border: 0;
 }
 
 .card-img img {
-    width: 20%;
+    width: 12%;
+}
+
+.card-box h4 {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
 }
 
 .services {
     height: calc(93vh - 76px);
     padding: 35px 25px;
+}
+
+.service-data {
+    margin: 20px 0 0;
+    color: #333;
+}
+
+.service-data .whatwedo {
+    text-align: center;
+    margin: 15px 0 40px;
+    width: 100%;
+    position: relative;
+}
+
+.service-data .whatwedo:after {
+    position: absolute;
+    content: '';
+    width: 100px;
+    height: 2px;
+    background: #999;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.service-data .whatwedo h3 {
+    margin: 5px 0 15px;
+}
+
+.tc {
+    text-align: center;
+}
+
+.service-data h5 {
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.service-data i {
+    font-size: 30px;
+    text-align: center;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.mb-4:hover i {
+    transition: 0.5s all ease;
+    color: #ddd;
+    transform: rotate(45deg);
+}
+
+.mb-4:hover {
+    transition: 0.5s all ease;
+    color: #000;
+}
+
+.service-bottom-img {
+    background: url(../images/img-service-bottom.jpg) no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-bottom-img h5,
+.service-bottom-img p {
+    color: #fff;
+}
+
+.service-bottom-img .dflex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.btn-outline-white {
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    border-radius: 5px;
+    padding: 8px 25px;
+    cursor: pointer;
+    transition: 0.5s all ease;
+}
+
+.btn-outline-white:hover {
+    border: 2px solid #fff;
+    color: #000;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 8px 25px;
 }
 
 .product {
@@ -147,7 +301,7 @@ code {
 
 .footer {
     background: #f8f9fa!important;
-    color: #333;
+    color: rgb(68, 68, 68);
     padding: 10px;
     text-align: center;
 }
